@@ -13,7 +13,6 @@ nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    column-gap: auto;
 }
 
 @media screen and (max-width:400px) {
@@ -21,7 +20,6 @@ nav ul {
         display: flex;
         flex-direction: column;
         font-size: smaller;
-        column-gap: auto;
     }
 
     body {
