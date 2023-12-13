@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.3.11/vue.global.min.js"
+        integrity="sha512-jUvo4wLmasBQ4VBRwG9qkfOP/6GkSepADybOv52QFmqEYQlPx8ihGINjxQkiaH+ygvkI0XI2dMSvPs2BcFL5Zg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img id="logo" src="./images/wandermom_logo.jpg" alt="wandermom logo"></a>
+        <nav>
+            <ul class="nav_list">
+                <li style="order: 1" class="nav_item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li style="order: 2" class="nav_item">
+                    <a href="about.html">About Me</a>
+                </li>
+                <li style="order: 3" class="nav_item">
+                    <a href="blog.html">Blog</a>
+                </li>
+                <li style="order: 4" class="nav_item">
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li style="order: 5" class="nav_item">
+                    <a href="photo_gallery.html">Photo Gallery</a>
+                </li>
+                <li style="order: 6" class="nav_item">
+                    <a href="travel_items.html">Travel Must-haves</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="line">Blog</h1>
+        <div id="app">
+            <div class="posts">
+                <div class="card">
+
+                    <h2>San Antonio, Texas</h2>
+                    <h5>All about our trip to San Antonio, Sept 2023</h5>
+                    <div class="image-container" @mouseover="showOverlay" @mouseleave="hideOverlay">
+                        <img src="./images/alamo.jpg" alt="baby and woman standing in front of alamo">
+                        <div class="overlay" v-if="show">
+                            <h2>The Alamo.</h2>
+                            <p>A UNESCO World Heritage Site located in downtown San Antonio. It was the first
+                                of the San Antonio missions founded to convert the local American Indians to
+                                Christianity.</p>
+                        </div>
+                    </div>
+                    <p>This year, we went to San Antonio for my birthday and it was HOT.
+                        Here is a list of things we did while in San Antonio:</p>
+                    <ul>
+                        <li>Riverwalk Boat Tour</li>
+                        <li>Riverwalk Walking Tour</li>
+                        <li>Self-guided tour of the San Antonio Missions by car</li>
+                        <li>Visit the Alamo</li>
+                        <li>Visit the <a
+                                href="https://www.thedoseum.org/?gclid=CjwKCAiA3aeqBhBzEiwAxFiOBq8kN41Y6n8c3CklZWvty8uvSVNwnKTXbbARUljfxAESAd4lYD5t3BoCzGoQAvD_BwE">Doseum</a>
+                        </li>
+                        <li>Go shopping at the Historic Market Square</li>
+                        <li>Eat lots and lots of tacos and Mexican food!</li>
+                    </ul>
+                    <p>If we each had to choose our favorite and least favorite activity it would probably look
+                        something like this:
+                    </p>
+
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Favorite Activity</th>
+                            <th>Least Favorite Activity</th>
+                        </tr>
+                        <tr>
+                            <td>Jenssy</td>
+                            <td>Riverwalk Boat Tour</td>
+                            <td>Shopping</td>
+                        </tr>
+                        <tr>
+                            <td>Sophie</td>
+                            <td>The Doseum</td>
+                            <td>The Alamo</td>
+                        </tr>
+                        <tr>
+                            <td>Diana</td>
+                            <td>Shopping</td>
+                            <td>The Alamo</td>
+                        </tr>
+                    </table>
+                    <p>If you're short on time, I would skip the Alamo. Don't be fooled by my smile in the
+                        picture -
+                        I was miserable and ready to go back to the hotel to shower. As you can tell in this
+                        video,
+                        we were all smiles (especially, Sophie) indoors at the Doseum!
+                    </p>
+                    <video width="200" src="./assets/video/doseum.mp4" poster="./assets/video/doseum.jpg"
+                        controls></video>
+                </div>
+                <div class="card">
+                    <h2>Orlando, Florida</h2>
+                    <h5>Our first time in Orlando, June 2023</h5>
+                    <div class="image-container" @mouseover="showOverlay" @mouseleave="hideOverlay">
+                        <img src="./images/disney_world.jpg" alt="family sitting in front of castle">
+                        <div class="overlay" v-if="show">
+                            <h2>Walt Disney World.</h2>
+                            <p>An amazing resort in Orlando that has four theme parks and two water parks.</p>
+                        </div>
+                    </div>
+                        <p>Earlier this year we took a trip to Orlando. Here is a list of things we did:</p>
+                        <ul>
+                            <li>Magic Kingdom (duh!)</li>
+                            <li>Disney Springs</li>
+                            <li>SeaWorld</li>
+                            <li>Relax at the amazing <a
+                                    href="https://www.druryhotels.com/locations/orlando-fl/drury-plaza-hotel-orlando">hotel</a>
+                            </li>
+                            <li> <a href="https://www.crayolaexperience.com/orlando">The Crayola Experience</a></li>
+                        </ul>
+                        <p>If we each had to choose our favorite and least favorite activity it would probably look
+                            something like this:
+                        </p>
+
+                        <table>
+                            <tr>
+                                <th>Name</th>
+                                <th>Favorite Activity</th>
+                                <th>Least Favorite Activity</th>
+                            </tr>
+                            <tr>
+                                <td>Jenssy</td>
+                                <td>SeaWorld</td>
+                                <td>Disney Springs</td>
+                            </tr>
+                            <tr>
+                                <td>Sophie</td>
+                                <td>SeaWorld</td>
+                                <td>Magic Kingdom</td>
+                            </tr>
+                            <tr>
+                                <td>Diana</td>
+                                <td>Magic Kingdom</td>
+                                <td>SeaWorld</td>
+                            </tr>
+                        </table>
+                        <p>If you're short on time, I would skip the Crayola Experience. It was fun but nothing to
+                            write
+                            home about. Sophie LOVED Sesame Street Land at SeaWorld. She had a lot of fun running
+                            through the sprinklers at Rubber Duckie Water Works. I would highly recommend staying at
+                            the
+                            Drury Plaza Hotel at Disney Springs.
+                        </p>
+                    </div>
+                </div>
+                <div class="posts">
+                    <div class="card">
+    
+                        <h2>Amsterdam, The Netherlands</h2>
+                        <h5>Our first time visiting the Netherlands, November 2023</h5>
+                        <div class="image-container" @mouseover="showOverlay" @mouseleave="hideOverlay">
+                            <img src="./images/amsterdam.jpg" alt="a man and woman holding a baby">
+                            <div class="overlay" v-if="show">
+                                <h2>Amsterdam City Centre.</h2>
+                                <p>The historical centre of Amsterdam where many of the city's landmarks are located. There's plenty to do here: go shopping, 
+                             take a canal tour or walking tour, or visit a museum!
+                                </p>
+                            </div>
+                        </div>
+                        <p>This year, we went to Amsterdam for Sophie's birthday and, despite the rainy weather, we had a blast!
+                            Here is a list of things we did while in Amsterdam:</p>
+                        <ul>
+                            <li>Private Photoshoot session in Amsterdam Centre</li>
+                            <li>Walking and shopping in Amsterdam Centre</li>
+                            <li>Anne Frank House Museum</li>
+                            <li>Spa day at Van Der Valk Hotel</li>
+                            <li>Canal Tour</li>
+                            <li>Eat lots and lots of waffles!</li>
+                        </ul>
+                        <p>If we each had to choose our favorite and least favorite activity it would probably look
+                            something like this:
+                        </p>
+    
+                        <table>
+                            <tr>
+                                <th>Name</th>
+                                <th>Favorite Activity</th>
+                                <th>Least Favorite Activity</th>
+                            </tr>
+                            <tr>
+                                <td>Jenssy</td>
+                                <td>Canal Tour</td>
+                                <td>Shopping. He hates shopping.</td>
+                            </tr>
+                            <tr>
+                                <td>Sophie</td>
+                                <td>Eating waffles</td>
+                                <td>Anne Frank House Museum (it's not very toddler-friendly)</td>
+                            </tr>
+                            <tr>
+                                <td>Diana</td>
+                                <td>Anne Frank House</td>
+                                <td>Nothing! I had a great time.</td>
+                            </tr>
+                        </table>
+                    </div>
+            </div>
+
+    </main>
+    <footer>&copy; 2023. Diana Velasquez. Open Source.</footer>
+</body>
+
+</html>
