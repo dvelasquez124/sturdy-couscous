@@ -1,47 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>My Personal Blog</title>
-        <link rel="stylesheet" href="./css/main.css">
-    </head>
-    <body>
-        <header>
-            <a href="index.html"><img id="logo" src="./images/wandermom_logo.jpg" 
-                alt="wandermom logo"></a>
-            <nav>
-                <ul class="nav_list">
-                    <li style="order: 1" class="nav_item">
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li style="order: 2" class="nav_item">
-                        <a href="about.html">About Me</a>
-                    </li>
-                    <li style= "order: 3" class="nav_item">
-                        <a href="blog.html">Blog</a>
-                    </li>
-                    <li style="order: 4" class="nav_item">
-                        <a href="contact.html">Contact</a>
-                    </li>
-                    <li style="order: 5" class="nav_item">
-                        <a href="photo_gallery.html">Photo Gallery</a>
-                    </li>
-                    <li style="order: 6" class="nav_item">
-                        <a href="travel_items.html">Travel Must-haves</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <div class="landing">  <h1 class="line">Welcome!</h1>
-            <p>This website was created by a mom who loves to travel to help moms (and dads!) that love to travel. 
-                If you're looking for travel inspiration for your next trip, activity and food recommendations, 
-                and/or tips for traveling with a baby/toddler - you've come to the right place! &#128512;</p>
-                <img src="./images/turtle.jpg" alt="woman holding a sea turtle">
-            </div>
-          
-        </main>
-        <footer>&copy; 2023. Diana Velasquez. Open Source.</footer>
-    </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WanderMom Blog</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.3.11/vue.global.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js" type="module"></script>
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><img id="logo" src="./images/wandermom_logo.jpg" alt="wandermom logo"></a>
+    <nav>
+      <ul class="nav_list">
+        <li class="nav_item"><a href="index.html">Home</a></li>
+        <li class="nav_item"><a href="about.html">About Me</a></li>
+        <li class="nav_item"><a href="blog.html">Blog</a></li>
+        <li class="nav_item"><a href="contact.html">Contact</a></li>
+        <li class="nav_item"><a href="photo_gallery.html">Photo Gallery</a></li>
+        <li class="nav_item"><a href="travel_items.html">Travel Must-haves</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="landing">
+      <h1 class="line">Welcome to WanderMom!</h1>
+      <p class="intro-text">
+        This blog was created by a mom who loves to travel, for other parents who love to explore the world with their kids.
+        Whether you're looking for travel inspiration, baby-friendly activities, family food finds, or practical tips for traveling with toddlers — you're in the right place! 😊
+      </p>
+      <img src="./images/turtle.jpg" alt="Woman holding a sea turtle" class="hero-image">
+    </section>
+
+    <section class="featured">
+      <h2>Featured Adventure: Amsterdam</h2>
+      <img src="./images/amsterdam.jpg" alt="a man and woman holding a baby" class="featured-image">
+      <p>Rainy streets, waffles, and memories in the making — we visited Amsterdam in November 2023 to celebrate Sophie's birthday. From a cozy canal tour to a moving visit to the Anne Frank House, it was a trip full of special moments. <a href="blog.html">Read the full story →</a></p>
+    </section>
+
+    <section id="app" class="blog-preview">
+      <h2>Recent Posts</h2>
+      <div class="posts">
+        <div class="card">
+          <h3>San Antonio, Texas</h3>
+          <p><strong>Date:</strong> Sept 2023</p>
+          <img src="./images/alamo.jpg" alt="baby and woman standing in front of alamo">
+          <p>Explore the Riverwalk, missions, and The Doseum with our toddler in tow!</p>
+        </div>
+        <div class="card">
+          <h3>Orlando, Florida</h3>
+          <p><strong>Date:</strong> June 2023</p>
+          <img src="./images/disney_world.jpg" alt="family sitting in front of castle">
+          <p>From Disney magic to Crayola chaos — our first trip to Orlando as a family of three.</p>
+        </div>
+        <div class="card">
+          <h3>Amsterdam, The Netherlands</h3>
+          <p><strong>Date:</strong> Nov 2023</p>
+          <img src="./images/amsterdam.jpg" alt="a man and woman holding a baby">
+          <p>Rainy streets, waffles, and memories in the making. A birthday trip for the books.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-links">
+      <h2>Start Here</h2>
+      <ul>
+        <li><a href="photo_gallery.html">🌍 View Our Photo Gallery</a></li>
+        <li><a href="travel_items.html">🧳 Check Out Our Travel Must-Haves</a></li>
+        <li><a href="about.html">👋 Meet Diana</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Diana Velasquez. Open Source.</p>
+  </footer>
+</body>
+
 </html>
