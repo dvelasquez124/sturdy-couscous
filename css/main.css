@@ -29,10 +29,10 @@ body {
   
   #logo {
     border-radius: 20px;
-    width: 180px;
-    border: 2px dotted #000;
-    display: block;
-    margin: 0 auto 10px;
+    width: 160px;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
   }
   
   /* Navigation */
