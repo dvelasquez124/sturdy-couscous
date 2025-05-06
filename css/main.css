@@ -1,368 +1,251 @@
-
-#logo {
-    border-radius: 15px 30px;
-    width: 30%;
-    border: 3px dotted black;
-}
-
-nav ul {
-    list-style: none;
-}
-
-.nav_list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-@media screen and (max-width:400px) {
-    .nav_list {
-        display: flex;
-        flex-direction: column;
-        font-size: smaller;
-    }
-
-    body {
-        background-color: black;
-    }
-
-    main {
-        background-color: white;
-        font-size: x-small;
-        color: red;
-    }
-
-    main h1 {
-        color: black;
-    }
-}
-
-
-@media print {
-    main {
-        font-family: georgia, times, serif;
-        font-size: large;
-    }
-
-    nav {
-        display: none;
-    }
-
-    footer {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 900px) and (min-width: 600px) {
-    main h1 {
-        text-decoration: none;
-    }
-
-    main {
-        font-size: 25px;
-        padding: 25px;
-        border: 5px solid white;
-        background: pink;
-    }
-}
-
-.landing {
-    height:600px;
-}
-
-
-nav ul li {
-    display: inline-block;
-
-}
-
-nav ul a {
-    display: inline-block;
-    text-decoration: none;
-    border: 1px solid black;
-    background-color: white;
-    border-radius: 4px;
-    width: 120px;
-    color: black;
-    padding: 3px;
-
-}
-
-nav a:hover {
-    background-color: black;
-    color: white;
-}
-
-
-
-header {
-    text-align: center;
-    border: 1px solid black;
-    background-color: rgba(241, 109, 160, 0.82);
-    padding: 10px;
-    box-shadow: 0 0 20px black;
-}
-
-footer {
-    text-align: center;
-    border: 1px solid;
-    background-color: rgba(241, 109, 160, 0.82);
-    padding: 20px;
-}
-
-h1 {
-    text-align: center;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
-    color: rgba(184, 38, 19, 0.82);
-    line-height: 200%;
-}
-
-.line {
-    padding-bottom: 1px;
-    border-bottom-style: dotted;
-    border-bottom-width: 3.1px;
-}
-
+/* Typography & Basics */
 body {
     margin: 0;
     padding: 0;
-    text-align: center;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: 'Quicksand', sans-serif;
     font-size: 16px;
-}
-
-/* styling blog */
-
-.card ul {
-    list-style: none;
-    text-align: left;
-}
-
-li::before {
-    content: "\25AA";
-    color: rgba(241, 109, 160, 0.82);
+    color: #333;
+    background-color: #fff9f9;
+    text-align: center;
+  }
+  
+  h1, h2, h3 {
+    color: #b82613;
+    margin-top: 1rem;
+  }
+  
+  h1.line {
+    border-bottom: 3px dotted #b82613;
     display: inline-block;
-    width: 2em;
-    margin-left: -2em;
-}
-
-
-table {
-    border: 1px solid black;
-    width: 100%;
-    border: 1px dotted black;
-    border-collapse: collapse;
-}
-
-th,
-td {
-    text-align: left;
-    padding: 5px;
-    border: 1px dotted black;
-}
-
-tr:hover {
+    padding-bottom: 0.5rem;
+  }
+  
+  /* Header */
+  header {
     background-color: rgba(241, 109, 160, 0.82);
-}
-
-th {
-    background-color: rgba(184, 38, 19, 0.82);
+    padding: 10px;
+    box-shadow: 0 0 10px #444;
+  }
+  
+  #logo {
+    border-radius: 20px;
+    width: 180px;
+    border: 2px dotted #000;
+    display: block;
+    margin: 0 auto 10px;
+  }
+  
+  /* Navigation */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .nav_item a {
+    text-decoration: none;
+    padding: 8px 14px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav_item a:hover {
+    background-color: black;
     color: white;
-}
-
-img {
-    width: 300px;
+  }
+  
+  /* Landing Section */
+  .landing {
+    padding: 2rem 1rem;
+    background: linear-gradient(to bottom, #fff9f9, #f9e4e4);
+  }
+  
+  .hero-image {
+    max-width: 400px;
+    width: 90%;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  /* Featured Section */
+  .featured {
+    background-color: #f7d4d4;
+    padding: 2rem 1rem;
+  }
+  
+  .featured-image {
+    max-width: 500px;
+    width: 90%;
+    border-radius: 12px;
+    margin: 1rem auto;
+  }
+  
+  /* Blog Cards */
+  .blog-preview .posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+  }
+  
+  .card {
+    background-color: #f4f4f4;
+    border-radius: 15px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 100%;
     height: auto;
     border-radius: 10px;
-    display: block;
-    margin: 0 auto;
-}
-
-
-.card {
-    background-color: rgb(216, 216, 216);
-    border-radius: 20px;
-    margin: 50px;
-    padding: 30px 0 30px 0;
-}
-
-
-
-.image-container {
-    position: relative;
-    display: inline-block;
-}
-
-/* styling text which will display when img is hovered over */
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.overlay:hover {
-    opacity: 1;
-}
-
-.overlay h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-/* styling photo gallery */
-
-.gallery {
-    width: 100%;
-    margin:0 auto;
-    display:grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 20px;
-    justify-content:center;
-    align-items: center; 
-    
+    margin: 1rem 0;
   }
- 
-  /* styling imgs in gallery */
+  
+  /* Quick Links */
+  .quick-links {
+    background-color: #ffe9f0;
+    padding: 2rem 1rem;
+  }
+  
+  .quick-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .quick-links li {
+    margin: 1rem 0;
+  }
+  
+  .quick-links a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #b82613;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: rgba(241, 109, 160, 0.82);
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  /* Gallery Layout */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 2rem;
+    justify-items: center;
+  }
+  
   .gallery_img {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
     cursor: pointer;
-    transition: transform 0.2s;
+    transition: transform 0.2s ease;
   }
-  /* image will expand little bit when hovered over */
+  
   .gallery_img:hover {
-    transform: scale(1.1);
-    cursor: zoom-in;
+    transform: scale(1.05);
   }
-  /* This section will be seen when we click on image */
+  
+  /* Lightbox */
   .image-popup-container {
     display: none;
     position: fixed;
-    top: 0;
-    left: 0;
+    z-index: 1000;
+    top: 0; left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0,0,0,0.8);
   }
- 
-  /* close button when we want to close the bigger image */
-  .close-button {
-    position: absolute;
-    top: 20px;
-    right: 50px;
-    font-size:60px;
-    color: #fff;
-    cursor: pointer;
-  }
-  .close-button:hover{
-    color: rgba(241, 109, 160, 0.82);
-  }
- 
-  /* when we click on the image it will expand a bit and display
-in middle of screen */
+  
   #popupImage {
-    display: inline-block;
     max-width: 80%;
     max-height: 80%;
-    margin: 0 auto;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-
-/* styling About Me Page */
-
-#multimedia {
-    display: none;
-}
-
-
-/* styling Contact Form */
-
-form {
-    margin: 10px auto;
-    width: 400px;
-    border: 1px solid black;
-    text-align: left;
-    padding: 20px;
-    border-radius: 25px;
-    background-color:  rgba(241, 109, 160, 0.82) ;
-}
-
-
-.errormsg {
+  
+  .close-button {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    font-size: 50px;
     color: white;
-    background-color: red;
-    display: none;
-    font-style: italic;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
-    font-size: 15px;
-  }
-
-
-
-#firstName, 
-#lastName,
-#email,
-#message {
-    width: 100%;
-}
-
-#submitBtn {
-    text-align: right;
-    font-family: georgia, times, serif;
-    
-}
-
-#multimediaBtn, #submit {
-    background-color: white;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
-    border-radius: 25px;
-}
-
-/* styling Travel Recommendations page */
-.read-more-state {
-    display: none;
-  }
-  
-  .read-more-target {
-    opacity: 0;
-    max-height: 0;
-    font-size: 0;
-    transition: .25s ease;
-  }
-  
-  .read-more-state:checked ~ .read-more-wrap .read-more-target {
-    opacity: 1;
-    font-size: inherit;
-    max-height: 999em;
-  }
-  
-  .read-more-state ~ .read-more-trigger:before {
-    content: "Read more";
-  }
-  
-  .read-more-state:checked ~ .read-more-trigger:before {
-    content: "Read less";
-  }
-  
-  .read-more-trigger {
     cursor: pointer;
-    display: inline-block;
-    padding: 0 .5em;
-    color: #666;
-    font-size: .9em;
-    line-height: 2;
-    border: 1px solid #ddd;
-    border-radius: .25em;
   }
-
+  
+  .close-button:hover {
+    color: #f16da0;
+  }
+  
+  /* Forms */
+  form {
+    background-color: rgba(241, 109, 160, 0.1);
+    border: 2px solid #f16da0;
+    padding: 20px;
+    max-width: 500px;
+    margin: 2rem auto;
+    border-radius: 15px;
+    text-align: left;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 0.5rem 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  form button, #submitBtn, #submit {
+    background-color: #fff;
+    border: 2px solid #f16da0;
+    color: #f16da0;
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #f16da0;
+    color: white;
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+    }
+  
+    .card {
+      width: 90%;
+    }
+  
+    .gallery_img {
+      height: 150px;
+    }
+  }
+  
