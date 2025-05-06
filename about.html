@@ -40,7 +40,8 @@
             <img src="./images/family.jpg" alt="a baby and two adults">
             <div class="about-intro">
                 <h2>Hi, I'm Diana</h2>
-                <p>I'm a full-time data professional by day, a part-time student by night, and a new-ish mom. Oh, and I may or may
+                <p>I'm a full-time data professional by day, a part-time student by night, and a new-ish mom. Oh, and I
+                    may or may
                     not be addicted to traveling. My travel crew: my husband Jenssy, and our daughter Sophie.</p>
             </div>
         </div>
@@ -55,16 +56,19 @@
                 stroller</a>.</p>
 
         <h2>Our First Trip</h2>
-        <p>The first vacation after giving birth nearly broke me. At the airport, I handed my daughter to my husband and
-            went to my happy place—the beach.</p>
-        <p>Click below if you need some peace and relaxation too:</p>
+        <p>The first time I traveled with my daughter, I nearly turned around at the airport. Total sensory overload. So
+            I closed my eyes... and imagined the beach.</p>
 
-        <button onclick="toggleMultimedia()" id="multimediaBtn">Show Multimedia</button>
-        <div id="multimedia">
-            <video width="250" src="./assets/video/beach.mp4" poster="./assets/video/beach.jpg" controls></video>
-            <audio src="./assets/audio/beach.mp3" controls></audio>
-        </div>
+        <section class="multimedia-section">
+            <h3>Need a moment of peace?</h3>
+            <p>This helped me reset. Maybe it will help you, too:</p>
+            <button onclick="toggleMultimedia()" id="multimediaBtn">Show Multimedia</button>
 
+            <div id="multimedia" class="hidden">
+                <video src="./assets/video/beach.mp4" poster="./assets/video/beach.jpg" controls></video>
+                <audio src="./assets/audio/beach.mp3" controls></audio>
+            </div>
+        </section>
         <p>That first trip was rough, but it has gotten so much easier. I'm excited to share our adventures with you.
             Now go buy that stroller 😉</p>
     </main>
