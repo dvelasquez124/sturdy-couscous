@@ -364,5 +364,37 @@ form button:hover {
         }
       }
       
+
+      /* Styling Hero Section */
+      .about-hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+      }
+      
+      .about-hero img {
+        max-width: 250px;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+      
+      .about-intro {
+        text-align: center;
+        max-width: 600px;
+      }
+      
+      @media screen and (min-width: 768px) {
+        .about-hero {
+          flex-direction: row;
+          justify-content: center;
+          text-align: left;
+        }
+      
+        .about-intro {
+          max-width: 400px;
+        }
+      }
     
 }
