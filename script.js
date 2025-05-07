@@ -31,26 +31,17 @@ function closeImage() {
 }
 
 function toggleMultimedia() {
-  // get the multimedia
-  var myMultimedia = document.getElementById("multimedia");
+  const multimediaSection = document.getElementById("multimedia");
+  const multimediaBtn = document.getElementById("multimediaBtn");
 
-  // get the current value of the clock's display property
-  var displaySetting = myMultimedia.style.display;
+  // Toggle the hidden class
+  multimediaSection.classList.toggle("hidden");
 
-  // Get the multimedia button, so we can change what it says
-  var multimediaBtn = document.getElementById("multimediaBtn");
-
-  if (displaySetting == "block") {
-    // multimedia is visible, hide it
-    myMultimedia.style.display = "none";
-    // change button text
-    multimediaBtn.innerHTML = "Show Multimedia";
-  }
-  else {
-    // multmedia is hidden, show it
-    myMultimedia.style.display = "block";
-    // change button text
-    multimediaBtn.innerHTML = "Hide Multimedia";
+  // Update the button label based on visibility
+  if (multimediaSection.classList.contains("hidden")) {
+    multimediaBtn.innerText = "Show Multimedia";
+  } else {
+    multimediaBtn.innerText = "Hide Multimedia";
   }
 }
 
