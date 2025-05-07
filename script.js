@@ -34,11 +34,13 @@ function toggleMultimedia() {
   const multimediaSection = document.getElementById("multimedia");
   const multimediaBtn = document.getElementById("multimediaBtn");
 
-  // Toggle the class instead of using display directly
-  const isHidden = multimediaSection.classList.toggle("hidden");
-
-  // Update button text based on visibility
-  multimediaBtn.innerText = isHidden ? "Show Multimedia" : "Hide Multimedia";
+  if (multimedia.classList.contains("hidden")) {
+    multimedia.classList.remove("hidden");
+    button.textContent = "Hide Multimedia";
+  } else {
+    multimedia.classList.add("hidden");
+    button.textContent = "Show Multimedia";
+  }
 }
 
 function validateForm() {
