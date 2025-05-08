@@ -34,12 +34,12 @@ function toggleMultimedia() {
   const multimediaSection = document.getElementById("multimedia");
   const multimediaBtn = document.getElementById("multimediaBtn");
 
-  if (multimedia.classList.contains("hidden")) {
-    multimedia.classList.remove("hidden");
-    button.textContent = "Hide Multimedia";
+  if (multimediaSection.classList.contains("hidden")) {
+    multimediaSection.classList.remove("hidden");
+    multimediaBtn.textContent = "Hide Multimedia";
   } else {
-    multimedia.classList.add("hidden");
-    button.textContent = "Show Multimedia";
+    multimediaSection.classList.add("hidden");
+    multimediaBtn.textContent = "Show Multimedia";
   }
 }
 
