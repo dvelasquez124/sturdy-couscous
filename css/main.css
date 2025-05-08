@@ -269,6 +269,17 @@ form button:hover {
     max-width: 90%;
   }
 
+  .hidden {
+    display: none;
+  }
+
+  #multimedia {
+    margin-top: 1rem;
+    background-color: #fff0f6;
+    padding: 1rem;
+    border-radius: 12px;
+    text-align: center;
+}
 /* Media Queries */
 @media screen and (max-width: 600px) {
     nav ul {
@@ -332,14 +343,6 @@ form button:hover {
     #multimediaBtn:hover {
         background-color: #f16da0;
         color: white;
-    }
-
-    #multimedia {
-        margin-top: 1rem;
-        background-color: #fff0f6;
-        padding: 1rem;
-        border-radius: 12px;
-        text-align: center;
     }
 
     /* Better container layout for About page */
@@ -406,10 +409,6 @@ form button:hover {
         .about-intro {
           max-width: 400px;
         }
-      }
-
-      .hidden {
-        display: none;
       }
     
 }
