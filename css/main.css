@@ -91,13 +91,20 @@ nav ul {
 }
 
 /* Blog Cards */
-.blog-preview .posts {
+.blog-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    text-align: left;
+  }
+
+  .blog-preview .posts,
+  .blog-container .posts {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 2rem;
-    padding: 2rem 1rem;
-}
+    justify-content: center;
+  }
 
 .card {
     background-color: #f4f4f4;
