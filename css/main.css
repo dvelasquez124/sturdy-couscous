@@ -26,6 +26,10 @@ body {
     display: block;
   }
 
+  body.about-page {
+    text-align: left;
+  }
+  
   /* Homepage Hero Section */
 .hero-image {
     max-width: 500px;
