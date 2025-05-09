@@ -19,6 +19,12 @@ body {
     display: inline-block;
     padding-bottom: 0.5rem;
   }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
   
   /* Header */
   header {
