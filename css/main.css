@@ -37,6 +37,16 @@ body {
     display: block;
   }
   
+  .card img,
+  .featured-image,
+  .hero-image {
+    max-width: 600px;
+    width: 100%;
+    margin: 1rem auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
   /* Header */
   header {
     margin-bottom: 2rem;
