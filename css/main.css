@@ -29,7 +29,7 @@ body {
   body.about-page {
     text-align: left;
   }
-  
+
   /* Homepage Hero Section */
 .hero-image {
     max-width: 500px;
@@ -395,6 +395,7 @@ body {
       max-width: 250px;
       border-radius: 12px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      margin: 0 auto;
     }
   
     .about-intro {
@@ -411,6 +412,11 @@ body {
   
       .about-intro {
         max-width: 400px;
+        text-align: left;
+      }
+
+      .about-hero img {
+        margin: 0 2rem 1rem 0;
       }
   
       .about-container img {
