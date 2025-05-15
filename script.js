@@ -25,7 +25,7 @@ const app = Vue.createApp({
         {
           title: "Dominican Republic",
           subtitle: "Coming May 2025",
-          image: "./images/dominican_republic.jpg",
+          image: "./images/coming_soon.png",
           alt: "beach with palm trees",
           preview: "Stay tuned for our next tropical family adventure!",
           content: [
