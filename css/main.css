@@ -19,9 +19,9 @@ body {
   
   /* === Logo and Header === */
     .logo-banner {
-    background-color: #fff;
+    background-color: linear-gradient(to bottom, #fff 80%, #fff0f5);
     width: 100%;
-    padding: 1rem 0;
+    padding: 1rem 0 0.05rem;
     display: flex;
     justify-content: center;
     align-items: center;
