@@ -21,7 +21,7 @@ body {
   .sticky-header {
     position: sticky;
     top: 0;
-    background-color: #FF00FF;
+    background-color: #d63384;
     z-index: 1000;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     padding: 1rem 0;
@@ -65,7 +65,7 @@ body {
     text-decoration: none;
     padding: 10px 16px;
     background-color: #fff;
-    color: #fff;
+    color: #d63384;;
     border: 2px solid #d63384;
     border-radius: 10px;
     font-weight: bold;
@@ -73,8 +73,8 @@ body {
   }
   
   .nav_item a:hover {
-    background-color: #fff;
-    color: #FF00FF;
+    background-color: #d63384;
+    color: #fff;
     transition: all 0.3s ease;
   }
   
