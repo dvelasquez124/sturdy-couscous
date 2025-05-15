@@ -31,15 +31,15 @@ function closeImage() {
 }
 
 function toggleMultimedia() {
-  const multimediaSection = document.getElementById("multimedia");
-  const multimediaBtn = document.getElementById("multimediaBtn");
+  const wrapper = document.getElementById("multimediaWrapper");
+  const btn = document.getElementById("multimediaBtn");
 
-  if (multimediaSection.classList.contains("hidden")) {
-    multimediaSection.classList.remove("hidden");
-    multimediaBtn.textContent = "Hide Multimedia";
+  if (wrapper.classList.contains("hidden")) {
+    wrapper.classList.remove("hidden");
+    btn.textContent = "Hide Multimedia";
   } else {
-    multimediaSection.classList.add("hidden");
-    multimediaBtn.textContent = "Show Multimedia";
+    wrapper.classList.add("hidden");
+    btn.textContent = "Show Multimedia";
   }
 }
 

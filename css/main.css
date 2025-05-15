@@ -234,18 +234,17 @@ body {
     width: 300px;
   }
 
-  #multimedia {
+  #multimediaWrapper {
     opacity: 1;
     max-height: 1000px;
     overflow: hidden;
     transition: opacity 0.6s ease, max-height 0.6s ease;
   }
 
-  .hidden {
+  #multimediaWrapper.hidden {
     opacity: 0;
     max-height: 0;
     overflow: hidden;
-    transition: opacity 0.6s ease, max-height 0.6s ease;
   }
   
   /* === Footer === */

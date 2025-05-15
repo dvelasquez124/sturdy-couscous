@@ -58,11 +58,10 @@
       <h3>Need a moment of peace?</h3>
       <p>This helped me reset. Maybe it will help you, too:</p>
       <button onclick="toggleMultimedia()" id="multimediaBtn">Show Multimedia</button>
-      <div id="multimedia" class="hidden">
+      <div id="multimediaWrapper" class="hidden"></div>
+      <div id="multimedia">
         <video src="./assets/video/beach.mp4" poster="./assets/video/beach.jpg" controls></video>
-        <audio src="./assets/audio/beach.mp3" controls></audio>
-        <audio controls>
-            <source src="./assets/audio/beach.mp3" type="audio/mpeg">
+        <audio src="./assets/audio/beach.mp3" controls>
             Your browser does not support the audio element.
         </audio>
       </div>
