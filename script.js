@@ -7,7 +7,7 @@ const app = Vue.createApp({
           title: "Costa Rica",
           subtitle: "Our family honeymoon, November 2024",
           image: "./images/costa_rica.jpg",
-          alt: "family at hot springs with volcano in the background",
+          alt: "child standing on balcony looking at a volcano",
           preview: "Our family honeymoon in Costa Rica — with Sophie tagging along, of course!",
           content: [
             "<p>We stayed at two of the most stunning resorts we've ever experienced.</p>",
