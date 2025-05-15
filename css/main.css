@@ -181,6 +181,71 @@ body {
     color: #b82613;
     font-weight: bold;
   }
+
+  /* === About Me Page === */
+  .multimedia-section {
+    background-color: #fff0f6;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05rem);
+    text-align: center;
+
+  }
+
+  .multimedia-section h3 {
+    font-size: 1.5rem;
+    color: #d63384;
+    margin-bottom: 0.5rem;
+  }
+
+  .multimedia-section p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  #multimediaBtn {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    font-size: 1rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  #multimediaBtn:hover {
+    background-color: #e0559f;
+  }
+
+  #multimediaBtn:active {
+    transform: scale(0.96);
+  }
+
+  #multimedia video,
+  #multimedia audio {
+    margin: 1rem auto;
+    max-width: 90%;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  #multimedia {
+    opacity: 1;
+    max-height: 1000px;
+    overflow: hidden;
+    transition: opacity 0.6s ease, max-height 0.6s ease;
+  }
+
+  .hidden {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.6s ease, max-height 0.6s ease;
+  }
   
   /* === Footer === */
   footer {
