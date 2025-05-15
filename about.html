@@ -2,78 +2,84 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>About Me</title>
-  <link rel="stylesheet" href="./css/main.css">
-  <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="script.js"></script>
 </head>
 
 <body class="about-page">
-  <header>
-    <div class="logo-banner">
-      <a href="index.html">
-        <img id="logo" src="./images/wandermom_horizontal_logo.png" alt="WanderMom logo">
-      </a>
-    </div>
-    <nav class="sticky-header">
-      <ul class="nav_list">
-        <li class="nav_item"><a href="index.html">Home</a></li>
-        <li class="nav_item"><a href="about.html">About Me</a></li>
-        <li class="nav_item"><a href="blog.html">Blog</a></li>
-        <li class="nav_item"><a href="contact.html">Contact</a></li>
-        <li class="nav_item"><a href="photo_gallery.html">Photo Gallery</a></li>
-        <li class="nav_item"><a href="travel_items.html">Travel Must-haves</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <div class="logo-banner">
+            <a href="index.html">
+                <img id="logo" src="./images/wandermom_horizontal_logo.png" alt="WanderMom logo">
+            </a>
+        </div>
+        <nav class="sticky-header">
+            <ul class="nav_list">
+                <li class="nav_item"><a href="index.html">Home</a></li>
+                <li class="nav_item"><a href="about.html">About Me</a></li>
+                <li class="nav_item"><a href="blog.html">Blog</a></li>
+                <li class="nav_item"><a href="contact.html">Contact</a></li>
+                <li class="nav_item"><a href="photo_gallery.html">Photo Gallery</a></li>
+                <li class="nav_item"><a href="travel_items.html">Travel Must-haves</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main class="about-container">
-    <h1 class="line">About Me</h1>
-    <div class="about-hero">
-      <img src="./images/family.jpg" alt="a baby and two adults">
-      <div class="about-intro">
-        <h2>Hi, I'm Diana</h2>
-        <p>I'm a full-time data professional by day, a part-time student by night, and a new-ish mom. Oh, and I may or may not be addicted to traveling. My travel crew: my husband Jenssy, and our daughter Sophie.</p>
-      </div>
-    </div>
+    <main class="about-container">
+        <h1 class="line">About Me</h1>
+        <div class="about-hero">
+            <img src="./images/family.jpg" alt="a baby and two adults">
+            <div class="about-intro">
+                <h2>Hi, I'm Diana</h2>
+                <p>I'm a full-time data professional by day, a part-time student by night, and a new-ish mom. Oh, and I
+                    may or may not be addicted to traveling. My travel crew: my husband Jenssy, and our daughter Sophie.
+                </p>
+            </div>
+        </div>
 
-    <blockquote>
-      Fun fact: I didn't get on a plane until I was 15. My daughter? She’s flown over 22 times.
-    </blockquote>
+        <blockquote>
+            Fun fact: I didn't get on a plane until I was 15. My daughter? She’s flown over 22 times.
+        </blockquote>
 
-    <section>
-      <h2>Traveling with a Baby</h2>
-      <p>Traveling with a baby is not for the faint of heart, but you will have fun. The key is to plan ahead!</p>
-      <p>If you have a child that uses a stroller, do yourself a favor and buy 
-        <a href="https://www.amazon.com/Terrain-Lightweight-Stroller-Breathable-28x17-5x39-8/dp/B07S3XK19G" target="_blank">this stroller</a>.
-      </p>
-    </section>
+        <section>
+            <h2>Traveling with a Baby</h2>
+            <p>Traveling with a baby is not for the faint of heart, but you will have fun. The key is to plan ahead!</p>
+            <p>If you have a child that uses a stroller, do yourself a favor and buy
+                <a href="https://www.amazon.com/Terrain-Lightweight-Stroller-Breathable-28x17-5x39-8/dp/B07S3XK19G"
+                    target="_blank">this stroller</a>.
+            </p>
+        </section>
 
-    <section>
-      <h2>Our First Trip</h2>
-      <p>The first time I traveled with my daughter, I nearly turned around at the airport. Total sensory overload. So I closed my eyes... and imagined the beach.</p>
-    </section>
+        <section>
+            <h2>Our First Trip</h2>
+            <p>The first time I traveled with my daughter, I nearly turned around at the airport. Total sensory
+                overload. So I closed my eyes... and imagined the beach.</p>
+        </section>
 
-    <section class="multimedia-section">
-      <h3>Need a moment of peace?</h3>
-      <p>This helped me reset. Maybe it will help you, too:</p>
-      <button onclick="toggleMultimedia()" id="multimediaBtn">Show Multimedia</button>
-      <div id="multimediaWrapper" class="hidden"></div>
-      <div id="multimedia">
-        <video src="./assets/video/beach.mp4" poster="./assets/video/beach.jpg" controls></video>
-        <audio src="./assets/audio/beach.mp3" controls>
-            Your browser does not support the audio element.
-        </audio>
-      </div>
-    </section>
+        <section class="multimedia-section">
+            <h3>Need a moment of peace?</h3>
+            <p>This helped me reset. Maybe it will help you, too:</p>
+            <button onclick="toggleMultimedia()" id="multimediaBtn">Show Multimedia</button>
+            <div id="multimediaWrapper" class="hidden">
+                <div id="multimedia">
+                    <video src="./assets/video/beach.mp4" poster="./assets/video/beach.jpg" controls></video>
+                    <audio src="./assets/audio/beach.mp3" controls>
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </section>
 
-    <p>That first trip was rough, but it has gotten so much easier. I'm excited to share our adventures with you. Now go buy that stroller 😉</p>
-  </main>
+        <p>That first trip was rough, but it has gotten so much easier. I'm excited to share our adventures with you.
+            Now go buy that stroller 😉</p>
+    </main>
 
-  <footer>
-    <p>🧳 Made with love, coffee, and carry-on bags &#128149; | &copy; 2025 Diana Velasquez</p>
-    <p><a href="https://github.com/dvelasquez124" target="_blank">View my projects on GitHub</a></p>
-</footer>
+    <footer>
+        <p>🧳 Made with love, coffee, and carry-on bags &#128149; | &copy; 2025 Diana Velasquez</p>
+        <p><a href="https://github.com/dvelasquez124" target="_blank">View my projects on GitHub</a></p>
+    </footer>
 </body>
 
 </html>
