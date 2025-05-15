@@ -11,8 +11,10 @@
 
 <body>
   <header>
-    <a href="index.html"><img id="logo" src="./images/wandermom_logo.jpg" alt="wandermom logo" /></a>
-    <nav>
+    <div class="logo-banner">
+      <a href="index.html"><img id="logo" src="./images/wandermom_horizontal_logo.png" alt="WanderMom logo" /></a>
+    </div>
+    <nav class="sticky-header">
       <ul class="nav_list">
         <li class="nav_item"><a href="index.html">Home</a></li>
         <li class="nav_item"><a href="about.html">About Me</a></li>
@@ -28,210 +30,29 @@
     <h1 class="line">Blog</h1>
     <div id="app">
       <div class="posts">
+        <div class="card" v-for="(post, index) in blogPosts" :key="index">
+          <h2>{{ post.title }}</h2>
+          <h5>{{ post.subtitle }}</h5>
+          <img :src="post.image" :alt="post.alt" />
 
-        <!-- Costa Rica -->
-        <div class="card">
-          <h2>Costa Rica</h2>
-          <h5>Our family honeymoon, November 2024</h5>
-          <div class="image-container" @mouseover="showOverlay" @mouseleave="hideOverlay">
-            <img src="./images/costa_rica.jpg" alt="family at hot springs with volcano in the background" />
-            <div class="overlay" v-if="show">
-              <h2>Arenal Volcano</h2>
-              <p>Majestic views from The Springs Resort & Spa, surrounded by hot springs and rainforest bliss.</p>
-            </div>
+          <div v-if="expandedIndex === index">
+            <div v-for="block in post.content" :key="block" v-html="block"></div>
+            <button class="read-more-btn" @click="expandedIndex = null">Read Less</button>
           </div>
-          <p>We celebrated our honeymoon in Costa Rica — with Sophie tagging along, of course! We stayed at two of the
-            most stunning resorts we've ever experienced.</p>
-          <p>Our first stop was <strong>The Springs Resort & Spa at Arenal</strong>, a luxurious paradise with thermal
-            hot springs, lush greenery, and breathtaking views of the Arenal Volcano. We spent our days soaking in the
-            springs, visiting the on-site wildlife sanctuary, and enjoying peaceful rainforest nights.</p>
-          <p>After a few days of relaxation, we headed to <strong>The Peace Lodge</strong>, their sister property near
-            San José. The room? Incredible. We had an upgraded suite with the biggest bathroom we've ever seen (and more
-            showers than we knew what to do with). Our balcony had a private hot tub with an unreal view of La Paz
-            Waterfall and its surrounding gardens.</p>
-          <p>Admission to the nature park was included with our stay, so we explored everything from waterfalls to
-            butterflies at our own pace. At night, we took a private frog tour — Sophie was absolutely delighted!</p>
-          <table>
-            <tr>
-              <th>Name</th>
-              <th>Favorite Activity</th>
-              <th>Least Favorite Activity</th>
-            </tr>
-            <tr>
-              <td>Jenssy</td>
-              <td>Soaking in the hot springs at night</td>
-              <td>Driving the winding roads</td>
-            </tr>
-            <tr>
-              <td>Sophie</td>
-              <td>Frog tour</td>
-              <td>Getting out of the hot tub</td>
-            </tr>
-            <tr>
-              <td>Diana</td>
-              <td>The view from the balcony at Peace Lodge</td>
-              <td>Leaving Costa Rica</td>
-            </tr>
-          </table>
-          <p>Costa Rica was pure magic. If you're looking for luxury, nature, and family-friendly adventure all in one,
-            this is it.</p>
-        </div>
 
-        <!-- Coming Soon: Dominican Republic -->
-        <div class="card">
-          <h2>Dominican Republic</h2>
-          <h5>Coming May 2025</h5>
-          <p>Stay tuned for our next tropical family adventure! We're heading to the Dominican Republic for sun, sand,
-            and new memories with Sophie.</p>
-        </div>
-
-        <!--  Older posts here  -->
-
-        <!-- San Antonio -->
-        <div class="card">
-          <h2>San Antonio, Texas</h2>
-          <h5>All about our trip to San Antonio, Sept 2023</h5>
-          <div class="image-container" @mouseover="showOverlay" @mouseleave="hideOverlay">
-            <img src="./images/alamo.jpg" alt="baby and woman standing in front of alamo" />
-            <div class="overlay" v-if="show">
-              <h2>The Alamo.</h2>
-              <p>A UNESCO World Heritage Site in downtown San Antonio. It was the first mission founded to convert local
-                American Indians to Christianity.</p>
-            </div>
+          <div v-else>
+            <p>{{ post.preview }}</p>
+            <button class="read-more-btn" @click="expandedIndex = index">Read More</button>
           </div>
-          <p>This year, we went to San Antonio for my birthday and it was HOT. Here's what we did:</p>
-          <ul>
-            <li>Riverwalk Boat Tour</li>
-            <li>Riverwalk Walking Tour</li>
-            <li>Self-guided mission tour</li>
-            <li>Visit the Alamo</li>
-            <li><a href="https://www.thedoseum.org/">Doseum</a></li>
-            <li>Shopping at Market Square</li>
-            <li>Eat all the tacos</li>
-          </ul>
-          <table>
-            <tr>
-              <th>Name</th>
-              <th>Favorite</th>
-              <th>Least Favorite</th>
-            </tr>
-            <tr>
-              <td>Jenssy</td>
-              <td>Riverwalk Boat Tour</td>
-              <td>Shopping</td>
-            </tr>
-            <tr>
-              <td>Sophie</td>
-              <td>The Doseum</td>
-              <td>The Alamo</td>
-            </tr>
-            <tr>
-              <td>Diana</td>
-              <td>Shopping</td>
-              <td>The Alamo</td>
-            </tr>
-          </table>
-          <p>If you're short on time, I'd skip the Alamo. Sophie much preferred the Doseum!</p>
-          <video width="300" src="./assets/video/doseum.mp4" poster="./assets/video/doseum.jpg" controls></video>
         </div>
-
-        <!--Orlando-->
-
-        <div class="card">
-          <h2>Orlando, Florida</h2>
-          <h5>First time in Orlando, June 2023</h5>
-          <div class="image-container" @mouseover="showOverlay" @mouseleave="hideOverlay">
-            <img src="./images/disney_world.jpg" alt="family sitting in front of castle" />
-            <div class="overlay" v-if="show">
-              <h2>Walt Disney World</h2>
-              <p>A magical resort with four theme parks and two water parks.</p>
-            </div>
-          </div>
-          <p>We had a blast in Orlando! Highlights included:</p>
-          <ul>
-            <li>Magic Kingdom</li>
-            <li>Disney Springs</li>
-            <li>SeaWorld</li>
-            <li><a href="https://www.druryhotels.com/locations/orlando-fl/drury-plaza-hotel-orlando">Our hotel</a></li>
-            <li><a href="https://www.crayolaexperience.com/orlando">The Crayola Experience</a></li>
-          </ul>
-          <table>
-            <tr>
-              <th>Name</th>
-              <th>Favorite</th>
-              <th>Least Favorite</th>
-            </tr>
-            <tr>
-              <td>Jenssy</td>
-              <td>SeaWorld</td>
-              <td>Disney Springs</td>
-            </tr>
-            <tr>
-              <td>Sophie</td>
-              <td>SeaWorld</td>
-              <td>Magic Kingdom</td>
-            </tr>
-            <tr>
-              <td>Diana</td>
-              <td>Magic Kingdom</td>
-              <td>SeaWorld</td>
-            </tr>
-          </table>
-          <p>Sophie especially loved Sesame Street Land. Highly recommend staying at Drury Plaza Hotel!</p>
-        </div>
-
-        <!-- Amsterdam -->
-        <div class="card">
-          <h2>Amsterdam, The Netherlands</h2>
-          <h5>First time in the Netherlands, Nov 2023</h5>
-          <div class="image-container" @mouseover="showOverlay" @mouseleave="hideOverlay">
-            <img src="./images/amsterdam.jpg" alt="a man and woman holding a baby" />
-            <div class="overlay" v-if="show">
-              <h2>Amsterdam Centre</h2>
-              <p>The city's vibrant, walkable historic core — filled with canals, shops, and museums.</p>
-            </div>
-          </div>
-          <p>We visited Amsterdam for Sophie's birthday and loved it despite the rain. Our itinerary:</p>
-          <ul>
-            <li>Private photoshoot</li>
-            <li>Shopping & walking in city centre</li>
-            <li>Anne Frank House</li>
-            <li>Spa day at Van Der Valk</li>
-            <li>Canal tour</li>
-            <li>Waffles. So many waffles.</li>
-          </ul>
-          <table>
-            <tr>
-              <th>Name</th>
-              <th>Favorite</th>
-              <th>Least Favorite</th>
-            </tr>
-            <tr>
-              <td>Jenssy</td>
-              <td>Canal Tour</td>
-              <td>Shopping</td>
-            </tr>
-            <tr>
-              <td>Sophie</td>
-              <td>Eating waffles</td>
-              <td>Anne Frank House</td>
-            </tr>
-            <tr>
-              <td>Diana</td>
-              <td>Anne Frank House</td>
-              <td>Nothing :)</td>
-            </tr>
-          </table>
-        </div>
-
       </div>
     </div>
   </main>
 
   <footer>
-    <p>🧳 Made with love, coffee, and carry-on bags | &copy; 2025 Diana Velasquez</p>
+    <p>🧳 Made with love, coffee, and carry-on bags &#128149; | &copy; 2025 Diana Velasquez</p>
     <p><a href="https://github.com/dvelasquez124" target="_blank">View my projects on GitHub</a></p>
-  </footer>
+</footer>
 </body>
 
 </html>
