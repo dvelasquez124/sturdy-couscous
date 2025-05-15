@@ -20,16 +20,20 @@ body {
   /* === Logo and Header === */
     .logo-banner {
     background-color: #fff;
-    padding: 1rem 0;
-    text-align: center;
+    width: 100%;
+    padding: 1rem 0 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 6px rbga(0, 0, 0, 0.03);
   }
   
   #logo {
-    height: 200px;
+    height: 180px;
     max-width: 100%;
     object-fit: contain;
-    border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: auto;
   }
   
   /* === Navigation === */
