@@ -175,6 +175,30 @@ body {
     font-size: 0.95rem;
     margin: 0.5rem 0;
   }
+
+  /* === Tables === */
+  .card table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: #fff9fc;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .card th,
+  .card td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ffe0ec;
+
+  }
+
+  .card th {
+    background-color: #ffd6e2;
+    font-weight: bold;
+  }
+
   
   /* === Quick Links === */
   .quick-links {
