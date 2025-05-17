@@ -216,6 +216,11 @@ body.blog-page {
     font-weight: bold;
 }
 
+/* === Read-more Button === */
+.read-more-btn {
+    margin-bottom: 1rem;
+}
+
 
 /* === Quick Links === */
 .quick-links {
