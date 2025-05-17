@@ -195,9 +195,10 @@ body.blog-page {
 
 .card ul {
     list-style: none;
-    padding-left: 0;
+    padding-left: 1.2rem;
     margin-top: 0.5rem;
     margin-bottom: 1rem;
+    list-style-position: inside;
 }
 
 .card li {
