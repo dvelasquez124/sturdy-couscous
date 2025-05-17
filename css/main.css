@@ -195,16 +195,14 @@ body.blog-page {
 
 .card ul {
     list-style: none;
-    padding-left: 1.2rem;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
-    list-style-position: inside;
+    padding-left: 0;
+    margin-top: 0.5rem 0 1rem;
 }
 
 .card li {
     position: relative;
-    padding-left: 1.6rem;
-    margin-bottom: 0.5rem;
+    padding-left: 1.2rem;
+    margin-bottom: 0.4rem;
     line-height: 1.6;
 }
 
@@ -213,6 +211,7 @@ body.blog-page {
     position: absolute;
     left: 0;
     top: 0.1rem;
+    font-size: 1rem;
 }
 
 /* === Tables === */
