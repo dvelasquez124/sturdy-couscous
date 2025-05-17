@@ -118,6 +118,15 @@ body {
     display: block;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
   }
+
+  /* === Blog Page Intro === */
+  .intro-text {
+    font-size: 1.1rem;
+    text-align: center;
+    max-width: 600px;
+    margin: 1rem auto 2rem;
+    color: #555;
+  }
   
   /* === Blog Cards === */
   body.blog-page {
