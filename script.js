@@ -4,7 +4,7 @@ const app = Vue.createApp({
       expandedIndex: null,
       blogPosts: [
         {
-          title: "Costa Rica",
+          title: "Costa Rica 🌋",
           subtitle: "Our family honeymoon, November 2024",
           image: "./images/costa_rica.jpg",
           alt: "child standing on balcony looking at a volcano",
@@ -59,7 +59,7 @@ const app = Vue.createApp({
           ]
         },
         {
-          title: "Orlando, Florida",
+          title: "Orlando, Florida 🎢",
           subtitle: "First time in Orlando, June 2023",
           image: "./images/disney_world.jpg",
           alt: "family sitting in front of castle",
@@ -82,7 +82,7 @@ const app = Vue.createApp({
           ]
         },
         {
-          title: "Amsterdam, The Netherlands",
+          title: "Amsterdam, The Netherlands 🇳🇱",
           subtitle: "First time in the Netherlands, Nov 2023",
           image: "./images/amsterdam.jpg",
           alt: "man and woman holding a baby",
