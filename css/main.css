@@ -193,6 +193,27 @@ body.blog-page {
     margin: 0.5rem 0;
 }
 
+.card ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.card li {
+    position: relative;
+    padding-left: 1.6rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.card li::before {
+    content: "🌸";
+    position: absolute;
+    left: 0;
+    top: 0.1rem;
+}
+
 /* === Tables === */
 .card table {
     width: 100%;
