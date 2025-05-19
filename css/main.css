@@ -200,18 +200,18 @@ body.blog-page {
 }
 
 .card li {
-    position: relative;
-    padding-left: 1.2rem;
-    margin-bottom: 0.4rem;
-    line-height: 1.6;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+  line-height: 1.6;
 }
 
 .card li::before {
     content: "🌸";
-    position: absolute;
-    left: 0;
-    top: 0.1rem;
+    flex-shrink: 0;
     font-size: 1rem;
+    line-height: 1.4;
 }
 
 /* === Tables === */
