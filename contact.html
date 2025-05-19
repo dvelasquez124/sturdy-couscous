@@ -3,71 +3,67 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>My Blog</title>
+    <title>Contact Me</title>
     <link rel="stylesheet" href="./css/main.css">
     <script src="script.js"></script>
 </head>
 
-<body id="formContainer">
+<body class="contact-page">
     <header>
-        <a href="index.html"><img id="logo" src="./images/wandermom_logo.jpg" alt="wandermom logo"></a>
-        <nav>
+        <div class="logo-banner">
+            <a href="index.html"><img id="logo" src="./images/wandermom_horizontal_logo.png" alt="WanderMom logo"></a>
+        </div>
+        <nav class="sticky-header">
             <ul class="nav_list">
-                <li style="order: 1" class="nav_item">
-                    <a href="index.html">Home</a>
-                </li>
-                <li style="order: 2" class="nav_item">
-                    <a href="about.html">About Me</a>
-                </li>
-                <li style="order: 3" class="nav_item">
-                    <a href="blog.html">Blog</a>
-                </li>
-                <li style="order: 4" class="nav_item">
-                    <a href="contact.html">Contact</a>
-                </li>
-                <li style="order: 5" class="nav_item">
-                    <a href="photo_gallery.html">Photo Gallery</a>
-                </li>
-                <li style="order: 6" class="nav_item">
-                    <a href="travel_items.html">Travel Must-haves</a>
-                </li>
+                <li class="nav_item"><a href="index.html">Home</a></li>
+                <li class="nav_item"><a href="about.html">About Me</a></li>
+                <li class="nav_item"><a href="blog.html">Blog</a></li>
+                <li class="nav_item"><a href="contact.html">Contact</a></li>
+                <li class="nav_item"><a href="photo_gallery.html">Photo Gallery</a></li>
+                <li class="nav_item"><a href="travel_items.html">Travel Must-haves</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+
+    <main class="contact-container">
         <h1 class="line">Contact Me</h1>
         <form name="myForm" method="post" action="https://formcarry.com/s/hWNLLZ_lCj" novalidate onsubmit="return validateForm();">
-            <p>First name (required):
+            <div class="form-group">
+                <label for="firstName">First name (required):</label>
                 <input type="text" name="firstName" id="firstName" required minlength="2" autofocus>
-            </p>
-            <p class="errormsg" id="name_errormsg1">First names should contain at least 2 letters.</p>
-            <p class="errormsg" id="name_errormsg2">First names should only contain letters.</p>
-            <br>
-            <p>Last name (required):
+                <p class="errormsg" id="name_errormsg1">First names should contain at least 2 letters.</p>
+                <p class="errormsg" id="name_errormsg2">First names should only contain letters.</p>
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Last name (required):</label>
                 <input type="text" name="lastName" id="lastName" required minlength="2">
-            </p>
-            <p class="errormsg" id="last_name_errormsg1">Last names should contain at least 2 letters.</p>
-            <p class="errormsg" id="last_name_errormsg2">Last names should only contain letters.</p>
-            <br>
-            <p>Email (required):
-                <input type="email" id="email" pattern=".+@example\.com" size="30" required>
-            </p>
-            <p class="errormsg" id="email_errormsg">Please enter a valid email.</p>
-            <br>
-            <p>
-                Your message:
-                <textarea class= "message" id="message" required></textarea>
-            </p>
-            <p class="errormsg" id="txt_errormsg">Please enter a message.</p>
+                <p class="errormsg" id="last_name_errormsg1">Last names should contain at least 2 letters.</p>
+                <p class="errormsg" id="last_name_errormsg2">Last names should only contain letters.</p>
+            </div>
 
-            <br>
-            <p id="submitBtn">
+            <div class="form-group">
+                <label for="email">Email (required):</label>
+                <input type="email" id="email" pattern=".+@.+\..+" size="30" required>
+                <p class="errormsg" id="email_errormsg">Please enter a valid email.</p>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Your message:</label>
+                <textarea class="message" id="message" required></textarea>
+                <p class="errormsg" id="txt_errormsg">Please enter a message.</p>
+            </div>
+
+            <div class="form-group">
                 <input type="submit" id="submit" value="Submit">
-
-            </p>
+            </div>
         </form>
     </main>
-    <footer>&copy; 2023. Diana Velasquez. Open Source.</footer>
+
+    <footer>
+        <p>🧳 Made with love, coffee, and carry-on bags &#128149; | &copy; 2025 Diana Velasquez</p>
+        <p><a href="https://github.com/dvelasquez124" target="_blank">View my projects on GitHub</a></p>
+    </footer>
 </body>
 
 </html>
