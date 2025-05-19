@@ -406,6 +406,30 @@ blockquote {
     max-height: 0;
 }
 
+/* === Contact Page === */
+.form-input,
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.75rem 1rem;
+    border: 2px solid #ffd6e2;
+    border-radius: 12px;
+    background-color: #fffafc;
+    font-size: 1rem;
+    color: #333;
+    box-shadow: 0 2px 8px rgba(255, 182, 193, 0.15);
+    transition: border-color 0.3s ease, box-shadown 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #f78fb3;
+    box-shadow: 0 0 0 3px rgba(247, 143, 179, 0.2);
+}
+
 /* === Footer === */
 footer {
     margin-top: 3rem;
