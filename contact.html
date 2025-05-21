@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <title>Contact Me</title>
     <link rel="stylesheet" href="./css/main.css">
-    <script src="script.js"></script>
 </head>
 
 <body class="contact-page">
@@ -27,7 +26,8 @@
 
     <main class="contact-container">
         <h1 class="line">Contact Me</h1>
-        <form name="myForm" method="post" action="https://formcarry.com/s/hWNLLZ_lCj" novalidate onsubmit="return validateForm();">
+        <form name="myForm" method="post" action="https://formcarry.com/s/hWNLLZ_lCj" novalidate
+            onsubmit="return validateForm();">
             <div class="form-group">
                 <label for="firstName">First name (required):</label>
                 <input class="form-input" type="text" name="firstName" id="firstName" required minlength="2" autofocus>
@@ -64,6 +64,10 @@
         <p>🧳 Made with love, coffee, and carry-on bags &#128149; | &copy; 2025 Diana Velasquez</p>
         <p><a href="https://github.com/dvelasquez124" target="_blank">View my projects on GitHub</a></p>
     </footer>
+
+    <!--Load Vue and JS script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.3.11/vue.global.min.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
