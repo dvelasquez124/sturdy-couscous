@@ -1,5 +1,3 @@
-const e = require("cors");
-
 const app = Vue.createApp({
   data() {
     return {
@@ -151,7 +149,7 @@ function validateForm() {
   var regAlpha = /^[a-zA-Z]+$/;
   var is_valid = true;
 
-  document.querySelector("errormsg").forEach(el => el.style.display = "none");
+  document.querySelector(".errormsg").forEach(el => el.style.display = "none");
   [firstname, lastname, email, textInput].forEach(el => el.classList.remove("invalid"));
 
 
