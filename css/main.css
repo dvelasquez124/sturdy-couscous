@@ -468,8 +468,9 @@ textarea:focus {
 
 input.invalid,
 textarea.invalid {
-    border-color: #d6336c !important;
-    box-shadow: 0 0 0 3px rgba(214, 51, 108, 0.2);
+    border-color: #e03131 !important;
+    background-color: #fff5f5;
+    box-shadow: 0 0 0 3px rgba(224, 49, 49, 0.2);
 }
 
 @keyframes pop-in {
