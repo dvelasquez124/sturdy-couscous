@@ -1,3 +1,5 @@
+const e = require("cors");
+
 const app = Vue.createApp({
   data() {
     return {
@@ -147,58 +149,60 @@ function validateForm() {
   var email = document.getElementById("email");
   var textInput = document.getElementById("message");
   var regAlpha = /^[a-zA-Z]+$/;
-  var is_valid = false;
+  var is_valid = true;
 
-  document.getElementById("name_errormsg1").style.display = "none";
-  document.getElementById("name_errormsg2").style.display = "none";
-  document.getElementById("last_name_errormsg1").style.display = "none";
-  document.getElementById("last_name_errormsg2").style.display = "none";
-  document.getElementById("email_errormsg").style.display = "none";
-  document.getElementById("txt_errormsg").style.display = "none";
+  document.querySelector("errormsg").forEach(el => el.style.display = "none");
+  [firstname, lastname, email, textInput].forEach(el => el.classList.remove("invalid"));
 
 
-  is_valid = true;
+  // First name validation
 
-  if (firstname == "" || firstname.value.length < 2) {
-    document.getElementById("name_errormsg1").style.display = "inline";
-    is_valid = false;
+  if (firstname.value.length < 2) {
+    document.getElementById("name_errormsg1").style.display = "block";
+    firstname.classList.add("invalid");
     firstname.focus();
-    return false;
-  }
-
-  if (!regAlpha.test(firstname.value)) {
-    document.getElementById("name_errormsg2").style.display = "inline";
     is_valid = false;
+    return false;
+  } else if (!regAlpha.test(firstname.value)) {
+    document.getElementById("name_errormsg2").style.display = "block";
+    firstname.classList.add("invalid");
     firstname.focus();
-    return false;
-  }
-
-  if (lastname == "" || lastname.value.length < 2) {
-    document.getElementById("last_name_errormsg1").style.display = "inline";
     is_valid = false;
-    lastname.focus();
     return false;
   }
 
-  if (!regAlpha.test(lastname.value)) {
-    document.getElementById("last_name_errormsg2").style.display = "inline";
+  // Last name validation
+  if (lastname.value.length < 2) {
+    document.getElementById("last_name_errormsg1").style.display = "block";
+    lastname.classList.add("invalid");  
+    lastname.focus();
     is_valid = false;
+    return false;
+  } else if (!regAlpha.test(lastname.value)) {
+    document.getElementById("last_name_errormsg2").style.display = "block";
+    lastname.classList.add("invalid");
     lastname.focus();
+    is_valid = false;
     return false;
   }
 
+  // Email validation
   if (email.value == "") {
-    document.getElementById("email_errormsg").style.display = "inline";
-    is_valid = false;
+    document.getElementById("email_errormsg").style.display = "block";
+    email.classList.add("invalid");
     email.focus();
-    return false;
-  }
-  if (textInput.value == "") {
-    document.getElementById("txt_errormsg").style.display = "inline";
     is_valid = false;
-    textInput.focus();
     return false;
   }
 
-  return true;
+  // Message validation
+  if (textInput.value.trim() == "") {
+    document.getElementById("txt_errormsg").style.display = "block";
+    textInput.classList.add("invalid");
+    textInput.focus();
+    is_valid = false;
+    return false;
+  }
+
+  return is_valid;
 }
