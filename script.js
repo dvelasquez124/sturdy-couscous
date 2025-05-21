@@ -142,14 +142,14 @@ function toggleMultimedia() {
 }
 
 function validateForm() {
-  var firstname = document.getElementById("firstName");
-  var lastname = document.getElementById("lastName");
-  var email = document.getElementById("email");
-  var textInput = document.getElementById("message");
-  var regAlpha = /^[a-zA-Z]+$/;
-  var is_valid = true;
+  const firstname = document.getElementById("firstName");
+  const lastname = document.getElementById("lastName");
+  const email = document.getElementById("email");
+  const textInput = document.getElementById("message");
+  const regAlpha = /^[a-zA-Z]+$/;
+  let is_valid = true;
 
-  document.querySelector(".errormsg").forEach(el => el.style.display = "none");
+  document.querySelectorAll(".errormsg").forEach(el => el.style.display = "none");
   [firstname, lastname, email, textInput].forEach(el => el.classList.remove("invalid"));
 
 
@@ -160,13 +160,11 @@ function validateForm() {
     firstname.classList.add("invalid");
     firstname.focus();
     is_valid = false;
-    return false;
   } else if (!regAlpha.test(firstname.value)) {
     document.getElementById("name_errormsg2").style.display = "block";
     firstname.classList.add("invalid");
     firstname.focus();
     is_valid = false;
-    return false;
   }
 
   // Last name validation
@@ -181,7 +179,6 @@ function validateForm() {
     lastname.classList.add("invalid");
     lastname.focus();
     is_valid = false;
-    return false;
   }
 
   // Email validation
@@ -190,16 +187,14 @@ function validateForm() {
     email.classList.add("invalid");
     email.focus();
     is_valid = false;
-    return false;
   }
 
   // Message validation
-  if (textInput.value.trim() == "") {
+  if (textInput.value.trim() === "") {
     document.getElementById("txt_errormsg").style.display = "block";
     textInput.classList.add("invalid");
     textInput.focus();
     is_valid = false;
-    return false;
   }
 
   return is_valid;
