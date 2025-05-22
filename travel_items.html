@@ -2,101 +2,71 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Travel Gear</title>
-    <link rel="stylesheet" href="./css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Must-Haves</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.3.11/vue.global.min.js"></script>
+  <script src="script.js"></script>
 </head>
 
-<body>
-    <header>
-        <a href="index.html"><img id="logo" src="./images/wandermom_logo.jpg" alt="wandermom logo"></a>
-        <nav>
-            <ul class="nav_list">
-                <li style="order: 1" class="nav_item">
-                    <a href="index.html">Home</a>
-                </li>
-                <li style="order: 2" class="nav_item">
-                    <a href="about.html">About Me</a>
-                </li>
-                <li style="order: 3" class="nav_item">
-                    <a href="blog.html">Blog</a>
-                </li>
-                <li style="order: 4" class="nav_item">
-                    <a href="contact.html">Contact</a>
-                </li>
-                <li style="order: 5" class="nav_item">
-                    <a href="photo_gallery.html">Photo Gallery</a>
-                </li>
-                <li style="order: 6" class="nav_item">
-                    <a href="travel_items.html">Travel Must-haves</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1 class="line">My Travel Gear Recommendations</h1>
-        <div class="card">
-        <input type="checkbox" class="read-more-state" id="post-1">
-            <h2>Toys for babies and tots</h2>
-            <p>How do you keep a toddler entertained on a plane, you ask? Easy -- toys. Here is a
-                list of toys to stock up on if you're planning on flying anytime soon.</p> 
-                    <ul class="read-more-wrap">
-                        <li class="read-more-target">
-                            <a href="https://www.amazon.com/Exorany-Montessori-Educational-Preschool-Activities/dp/B0BGHKBBXB/ref=sxin_14_pa_sp_search_thematic_sspa?content-id=amzn1.sym.d17ca69f-1a39-4f7d-a62f-e5dff4cfd6d8%3Aamzn1.sym.d17ca69f-1a39-4f7d-a62f-e5dff4cfd6d8&crid=2XUS9KRL8J8UD&cv_ct_cx=baby%2Bbusy%2Bboard%2B6-12%2Bmonths&keywords=baby%2Bbusy%2Bboard%2B6-12%2Bmonths&pd_rd_i=B0BGHKBBXB&pd_rd_r=6cb94d9f-9aa5-47e0-bca0-9b40143ba8da&pd_rd_w=ZHfts&pd_rd_wg=SD0V3&pf_rd_p=d17ca69f-1a39-4f7d-a62f-e5dff4cfd6d8&pf_rd_r=Y6ZTS4TZYCJ8YVG284ZS&qid=1702426099&s=toys-and-games&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=busy%2Bbab%2Ctoys-and-games%2C102&sr=1-4-364cf978-ce2a-480a-9bb0-bdb96faa0f61-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1">Busy Baby Board</a>
-                        </li>
-                        <li class="read-more-target">
-                            <a href="https://www.amazon.com/ALASOU-Suction-Toddlers-Birthday-Spinning/dp/B0CBSK6TPR/ref=sr_1_2_sspa?crid=3N7B9EYZR9WFN&keywords=suction%2Bspinners&qid=1702426214&s=toys-and-games&sprefix=suction%2Bspinners%2Ctoys-and-games%2C122&sr=1-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1">Suction Cup Spinner Toy</a>
-                        </li>
-                        <li class="read-more-target">
-                            <a href="https://www.amazon.com/LEGO-Animals-Building-Toddlers-Preschool/dp/B09XVGQDJT/ref=sr_1_3_sspa?crid=2WHQ026S5OBUP&keywords=duplo%2Blego%2Bsets&qid=1702426305&s=toys-and-games&sprefix=dupl%2Ctoys-and-games%2C127&sr=1-3-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1">Duplo Lego Sets</a>
-                        </li>
-                        <li class="read-more-target">
-                            <a href="https://www.amazon.com/Bluey-Reusable-Activity-Activities-Screen-Free/dp/B09PGVGCH5/ref=sr_1_1?crid=3N5A7I4A1OE10&keywords=water+coloring+book&qid=1702426361&s=toys-and-games&sprefix=water+color%2Ctoys-and-games%2C123&sr=1-1">Aqua Art</a>
-                        </li>
-                        <li class="read-more-target">
-                            <a href="https://www.amazon.com/Melissa-Doug-Reusable-Water-Reveal-Activity/dp/B01K76FH8Q/ref=sr_1_2?crid=3N5A7I4A1OE10&keywords=water+coloring+book&qid=1702426501&s=toys-and-games&sprefix=water+color%2Ctoys-and-games%2C123&sr=1-2">Water Wow</a>
-                        </li>
-                        <li class="read-more-target">
-                            <a href="https://www.amazon.com/Crayola-Nickelodeon-Activity-Markers-Toddlers/dp/B08Z1ZNVSV/ref=sr_1_16?crid=1L19UJYX0VPWV&keywords=no%2Bmess%2Bcrayola&qid=1702426606&s=toys-and-games&sprefix=no%2Bmess%2Ctoys-and-games%2C84&sr=1-16&th=1">Crayola Color Wonder Mess-Free Coloring Activity Pad</a>
-                        </li>
-                        <li class="read-more-target">
-                            <a href="https://www.amazon.com/FLUESTON-Writing-Christmas-Birthday-Dinosaur/dp/B0CDBYW6LH/ref=sr_1_3_sspa?crid=3AZM1YCO2B2CL&keywords=led%2Btablet%2Bfor%2Bkids&qid=1702426810&s=toys-and-games&sprefix=led%2Bta%2Ctoys-and-games%2C214&sr=1-3-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1">LCD Writing Tablet</a>
-                        </li>
-                    </ul>
-            <label for="post-1" class="read-more-trigger"></label>
-        </div>
+<body class="travel-items-page">
+  <header>
+    <div class="logo-banner">
+      <a href="index.html"><img id="logo" src="./images/wandermom_horizontal_logo.png" alt="WanderMom logo"></a>
+    </div>
+    <nav class="sticky-header">
+      <ul class="nav_list">
+        <li class="nav_item"><a href="index.html">Home</a></li>
+        <li class="nav_item"><a href="about.html">About Me</a></li>
+        <li class="nav_item"><a href="blog.html">Blog</a></li>
+        <li class="nav_item"><a href="contact.html">Contact</a></li>
+        <li class="nav_item"><a href="photo_gallery.html">Photo Gallery</a></li>
+        <li class="nav_item"><a href="travel_items.html">Travel Must-haves</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <div class="card">
-            <input type="checkbox" class="read-more-state" id="post-2">
-           
-                <h2>Best Toddler Snacks for Airplane Travel</h2>
-                <p>Don't forget the snacks! Trust me, you really don't want to forget the snacks. If your child is anything like mine, she will not eat anything snacks provided 
-                    to you by the airline. That's okay, though, because I always come prepared. Continue reading for some snack inspo. 
-                </p> 
-                        <ul class="read-more-wrap">
-                            <li class="read-more-target">
-                                <a href="https://www.walmart.com/ip/Original-Cheerios-Heart-Healthy-Cereal-Cup-1-3-OZ-Single-Serve-Cereal-Cup/37586842?wmlspartner=wlpa&selectedSellerId=0&wl13=5295&adid=2222222227737586842_117755028669_12420145346&wmlspartner=wmtlabs&wl0=&wl1=g&wl2=c&wl3=501107745824&wl4=pla-306310554666&wl5=1014843&wl6=&wl7=&wl8=&wl9=pla&wl10=8175035&wl11=local&wl12=37586842&wl13=5295&veh=sem_LIA&gclsrc=aw.ds&&adid=2222222223737586842_117755028669_12420145346&wl0=&wl1=g&wl2=c&wl3=501107745824&wl4=pla-306310554666&wl5=1014843&wl6=&wl7=&wl8=&wl9=pla&wl10=8175035&wl11=local&wl12=37586842&veh=sem&gad_source=1&gclid=CjwKCAiApuCrBhAuEiwA8VJ6Jr0gEWAdFSUH0apQHYQW6NLU1tvJW4X2IqLgKJo2CigUigx7ANDhKRoCSGAQAvD_BwE">Cheerios Cup</a>
-                            </li>
-                            <li class="read-more-target">
-                                <a href="https://www.target.com/p/welch-39-s-fruit-snacks-mixed-fruit-32oz-40ct/-/A-87545403?region_id=069069&ref=tgt_adv_xsp&AFID=google&fndsrc=tgtao&DFA=71700000108139148&CPNG=PLA_Snacks%2BCandy_Priority%2BShopping%7CSnacks%2BCandy_Ecomm_Food_Bev&adgroup=Snacks%2BCandy_Priority+TCINs&LID=700000001170770pgs&LNM=PRODUCT_GROUP&network=g&device=c&location=1014843&targetid=aud-552621964711:pla-1681397858791&gad_source=1&gclid=CjwKCAiApuCrBhAuEiwA8VJ6JtndQ9fHyBxrlXXzrjN3dOx6gbFy55O5LvslhMnULBSHQlNIPgtN3xoC6B0QAvD_BwE&gclsrc=aw.ds">Welches' fruit snacks</a>
-                            </li>
-                            <li class="read-more-target">
-                                <a href="https://www.target.com/p/ripple-on-the-go-chocolate-dairy-free-pea-milk-4pk-8-fl-oz/-/A-84241293#lnk=sametab">Ripple On the Go Chocolate Dairy Free Pea Milk</a>
-                            </li>
-                            <li class="read-more-target">
-                                <a href="https://www.amazon.com/good2grow-Variety-Strawberry-Character-Excellent/dp/B0BQCXTDK1/ref=asc_df_B0BQCXTDK1/?tag=hyprod-20&linkCode=df0&hvadid=652433504347&hvpos=&hvnetw=g&hvrand=2624485459259838769&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1014843&hvtargid=pla-2002614933990&psc=1&mcid=4edda90090383d9eb993abd5637ba0a1">Good2grow Juice </a>
-                            </li>
-                            <li class="read-more-target">
-                                <a href="https://www.target.com/p/earth-39-s-best-organic-4pk-sesame-street-strawberry-banana-fruit-yogurt-smoothie-16-8oz/-/A-16185684">Earth's Best Organic Fruit Yogurt Smoothie</a>
-                            </li>
-                            <li class="read-more-target">
-                                <a href="https://www.target.com/p/nature-valley-crunchy-oats-39-n-honey-granola-bars-12ct/-/A-12935981#lnk=sametab">Nature Valley Crunchy Oats 'N Honey Granola Bars</a>
-                            </li>
-                        </ul>
-                <label for="post-2" class="read-more-trigger"></label>
-            </div>
-    </main>
-    <footer>&copy; 2023. Diana Velasquez. Open Source.</footer>
+  <main class="must-haves">
+    <h1 class="line">My Travel Gear Recommendations</h1>
+
+    <div class="card">
+      <input type="checkbox" class="read-more-state" id="post-1">
+      <h2>Toys for babies and tots</h2>
+      <p>How do you keep a toddler entertained on a plane, you ask? Easy — toys. Here’s what we packed:</p>
+      <ul class="read-more-wrap">
+        <li class="read-more-target"><a href="https://www.amazon.com/Exorany-Montessori-Educational-Preschool-Activities/dp/B0BGHKBBXB">Busy Baby Board</a></li>
+        <li class="read-more-target"><a href="https://www.amazon.com/ALASOU-Suction-Toddlers-Birthday-Spinning/dp/B0CBSK6TPR">Suction Cup Spinner Toy</a></li>
+        <li class="read-more-target"><a href="https://www.amazon.com/LEGO-Animals-Building-Toddlers-Preschool/dp/B09XVGQDJT">Duplo Lego Sets</a></li>
+        <li class="read-more-target"><a href="https://www.amazon.com/Bluey-Reusable-Activity-Activities-Screen-Free/dp/B09PGVGCH5">Aqua Art</a></li>
+        <li class="read-more-target"><a href="https://www.amazon.com/Melissa-Doug-Reusable-Water-Reveal-Activity/dp/B01K76FH8Q">Water Wow</a></li>
+        <li class="read-more-target"><a href="https://www.amazon.com/Crayola-Nickelodeon-Activity-Markers-Toddlers/dp/B08Z1ZNVSV">Crayola Color Wonder</a></li>
+        <li class="read-more-target"><a href="https://www.amazon.com/FLUESTON-Writing-Christmas-Birthday-Dinosaur/dp/B0CDBYW6LH">LCD Writing Tablet</a></li>
+      </ul>
+      <label for="post-1" class="read-more-trigger"></label>
+    </div>
+
+    <div class="card">
+      <input type="checkbox" class="read-more-state" id="post-2">
+      <h2>Best Toddler Snacks for Airplane Travel</h2>
+      <p>Don't forget the snacks! Airline options rarely work for toddlers. These are my go-tos:</p>
+      <ul class="read-more-wrap">
+        <li class="read-more-target"><a href="https://www.walmart.com/ip/Original-Cheerios-Heart-Healthy-Cereal-Cup-1-3-OZ-Single-Serve-Cereal-Cup/37586842">Cheerios Cup</a></li>
+        <li class="read-more-target"><a href="https://www.target.com/p/welch-39-s-fruit-snacks-mixed-fruit-32oz-40ct/-/A-87545403">Welch’s Fruit Snacks</a></li>
+        <li class="read-more-target"><a href="https://www.target.com/p/ripple-on-the-go-chocolate-dairy-free-pea-milk-4pk-8-fl-oz/-/A-84241293">Ripple Chocolate Pea Milk</a></li>
+        <li class="read-more-target"><a href="https://www.amazon.com/good2grow-Variety-Strawberry-Character-Excellent/dp/B0BQCXTDK1">Good2Grow Juice</a></li>
+        <li class="read-more-target"><a href="https://www.target.com/p/earth-39-s-best-organic-4pk-sesame-street-strawberry-banana-fruit-yogurt-smoothie-16-8oz/-/A-16185684">Earth’s Best Smoothie</a></li>
+        <li class="read-more-target"><a href="https://www.target.com/p/nature-valley-crunchy-oats-39-n-honey-granola-bars-12ct/-/A-12935981">Nature Valley Bars</a></li>
+      </ul>
+      <label for="post-2" class="read-more-trigger"></label>
+    </div>
+  </main>
+
+  <footer>
+    <p>🧳 Made with love, coffee, and carry-on bags &#128149; | &copy; 2025 Diana Velasquez</p>
+    <p><a href="https://github.com/dvelasquez124" target="_blank">View my projects on GitHub</a></p>
+</footer>
 </body>
 
 </html>
+
