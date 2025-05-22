@@ -645,7 +645,58 @@ footer a:hover {
 .read-more-state:checked ~ .read-more-trigger::before {
     content: "Show less ↑";
 }
+/* Responsive Global Mobile Styles */
+@media screen and (max-width: 768px) {
+    header .logo-banner,
+    nav.sticky-header {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav_list {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+        margin: 1rem 0;
+    }
+
+    .nav_item a {
+        display: block;
+        padding: 0.75rem 1rem;
+        width: 100%;
+    }
+
+    h1.line {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        padding: 1rem;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery_img {
+        border-radius: 10px;
+    }
+
+    .read-more-trigger {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer {
+        font-size: 0.85rem;
+        padding: 1rem;
+    }
+    
+}
+
 /* Responsive layout for About Hero */
+
 
 @media screen and (min-width: 768px) {
     .about-hero {
