@@ -6,85 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo Gallery</title>
     <link rel="stylesheet" href="./css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.3.11/vue.global.min.js"></script>
     <script src="script.js"></script>
 </head>
 
-<body>
+<body class="gallery-page">
     <header>
-        <a href="index.html"><img id="logo" src="./images/wandermom_logo.jpg" alt="wandermom logo"></a>
-        <nav>
+        <div class="logo-banner">
+            <a href="index.html"><img id="logo" src="./images/wandermom_horizontal_logo.png" alt="WanderMom logo"></a>
+        </div>
+        <nav class="sticky-header">
             <ul class="nav_list">
-                <li style="order: 1" class="nav_item">
-                    <a href="index.html">Home</a>
-                </li>
-                <li style="order: 2" class="nav_item">
-                    <a href="about.html">About Me</a>
-                </li>
-                <li style="order: 3" class="nav_item">
-                    <a href="blog.html">Blog</a>
-                </li>
-                <li style="order: 4" class="nav_item">
-                    <a href="contact.html">Contact</a>
-                </li>
-                <li style="order: 5" class="nav_item">
-                    <a href="photo_gallery.html">Photo Gallery</a>
-                </li>
-                <li style="order: 6" class="nav_item">
-                    <a href="travel_items.html">Travel Must-haves</a>
-                </li>
+                <li class="nav_item"><a href="index.html">Home</a></li>
+                <li class="nav_item"><a href="about.html">About Me</a></li>
+                <li class="nav_item"><a href="blog.html">Blog</a></li>
+                <li class="nav_item"><a href="contact.html">Contact</a></li>
+                <li class="nav_item"><a href="photo_gallery.html">Photo Gallery</a></li>
+                <li class="nav_item"><a href="travel_items.html">Travel Must-haves</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main class="gallery-section">
         <h1 class="line">Image Gallery</h1>
-        <p>In this section, I will share some pictures we have taken while traveling. </p>
+        <p>Snapshots from our adventures — family, food, cities, and sweet moments along the way.</p>
 
         <div class="gallery">
-        
-            <img src="./images/photo-gallery/photo1.jpg" alt="Ghent" class="gallery_img" onclick="showImage(src)">
-            <img src="./images/photo-gallery/photo2.jpg" alt="Castle" class="gallery_img" onclick="showImage(src)">
-            <img src="./images/photo-gallery/photo3.jpg" alt="Brussels" class="gallery_img" onclick="showImage(src)">
-            <img src="./images/photo-gallery/photo4.jpg" alt="Man and woman smiling" class="gallery_img"
-                onclick="showImage(src)">
-            <img src="./images/photo-gallery/photo5.jpg" alt="Belgian Beer World" class="gallery_img"
-                onclick="showImage(src)">
-            <img src="./images/photo-gallery/photo6.jpg" alt="Brussels City Centre" class="gallery_img"
-                onclick="showImage(src)">
-            <img src="./images/photo-gallery/photo7.jpg" alt="Woman carrying a child" class="gallery_img"
-                onclick="showImage(src)">
-            <img src="./images/photo-gallery/photo8.jpg" alt="Waffles and bubble tea" class="gallery_img"
-                onclick="showImage(src)">
-            <img src="./images/photo-gallery/photo9.jpg" alt="Dad and child reading a book outside" class="gallery_img"
-                onclick="showImage(src)">
-            <img src="./images/photo-gallery/photo10.jpg" alt="Dad and child walking" class="gallery_img"
-                onclick="showImage(src)">
-            <img src="./images/photo-gallery/photo11.jpg" alt="Architecture" class="gallery_img"
-                onclick="showImage(src)">
-            <img src="./images/photo-gallery/photo12.jpg" alt="Dad and child laughing" class="gallery_img"
-                onclick="showImage(src)">
+            <img src="./images/photo-gallery/photo1.jpg" alt="Ghent" class="gallery_img" onclick="showImage(this.src)">
+            <img src="./images/photo-gallery/photo2.jpg" alt="Castle" class="gallery_img" onclick="showImage(this.src)">
+            <img src="./images/photo-gallery/photo3.jpg" alt="Brussels" class="gallery_img" onclick="showImage(this.src)">
+            <img src="./images/photo-gallery/photo4.jpg" alt="Man and woman smiling" class="gallery_img" onclick="showImage(this.src)">
+            <img src="./images/photo-gallery/photo5.jpg" alt="Belgian Beer World" class="gallery_img" onclick="showImage(this.src)">
+            <img src="./images/photo-gallery/photo6.jpg" alt="Brussels City Centre" class="gallery_img" onclick="showImage(this.src)">
+            <img src="./images/photo-gallery/photo7.jpg" alt="Woman carrying a child" class="gallery_img" onclick="showImage(this.src)">
+            <img src="./images/photo-gallery/photo8.jpg" alt="Waffles and bubble tea" class="gallery_img" onclick="showImage(this.src)">
+            <img src="./images/photo-gallery/photo9.jpg" alt="Dad and child reading outside" class="gallery_img" onclick="showImage(this.src)">
+            <img src="./images/photo-gallery/photo10.jpg" alt="Dad and child walking" class="gallery_img" onclick="showImage(this.src)">
+            <img src="./images/photo-gallery/photo11.jpg" alt="Architecture" class="gallery_img" onclick="showImage(this.src)">
+            <img src="./images/photo-gallery/photo12.jpg" alt="Dad and child laughing" class="gallery_img" onclick="showImage(this.src)">
+        </div>
 
-                </div>
-
-            <div class="image-popup-container" id="imagePopup">
-                <span class="close-button" onclick="closeImage()">×</span>
-                <img src="" alt="Popup Image" id="popupImage">
-            </div>
-            <br>
-
-
-
-
-
-
-
-
-
-
-
-
+        <div class="image-popup-container" id="imagePopup">
+            <span class="close-button" onclick="closeImage()">×</span>
+            <img src="" alt="Popup Image" id="popupImage">
+        </div>
     </main>
-    <footer>&copy; 2023. Diana Velasquez. Open Source.</footer>
+
+    <footer>
+        <p>🧳 Made with love, coffee, and carry-on bags &#128149; | &copy; 2025 Diana Velasquez</p>
+        <p><a href="https://github.com/dvelasquez124" target="_blank">View my projects on GitHub</a></p>
+    </footer>
 </body>
 
 </html>
