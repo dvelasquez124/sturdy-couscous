@@ -582,6 +582,69 @@ footer a:hover {
     }
 }
 
+/* === Must-Haves Page === */
+
+/* Card layout */
+.must-haves .card {
+    background-color: #fffdfa;
+    border: 2px solid #fde2e4;
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.must-haves .card:hover {
+    transform: translateY(-5px);
+}
+/* Links */
+.must-haves a {
+    color: #d6336c;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.must-haves a:hover {
+    text-decoration: underline;
+}
+
+/* Read More */
+.read-more-state {
+    display: none;
+}
+
+.read-more-wrap {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding-left: 1.2rem;
+}
+
+.read-more-state:checked ~ .read-more-wrap {
+    max-height: 500px;
+}
+
+.read-more-trigger {
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    background-color: #d6336c;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.read-more-trigger:before {
+    content: "Show more ↓";
+}
+
+.read-more-state:checked ~ .read-more-trigger::before {
+    content: "Show less ↑";
+}
 /* Responsive layout for About Hero */
 
 @media screen and (min-width: 768px) {
