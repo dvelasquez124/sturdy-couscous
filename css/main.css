@@ -693,6 +693,10 @@ footer a:hover {
         padding: 1rem;
     }
 
+    .card .read-more-trigger {
+        margin-top: 1rem;
+    }
+
     .gallery {
         grid-template-columns: 1fr 1fr;
     }
@@ -702,8 +706,15 @@ footer a:hover {
     }
 
     .read-more-trigger {
+        display: block;
         width: 100%;
+        max-width: 300px;
+        margin: 1rem auto 0;
+        padding: 0.6rem 1rem;
         text-align: center;
+        word-wrap: break-word;
+        font-size: 0.95rem;
+        box-sizing: border-box;
     }
 
     form {
