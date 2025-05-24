@@ -631,10 +631,14 @@ footer a:hover {
 
 /* Responsive Global Mobile Styles */
 @media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
     main {
-        padding: 1.2rem 1rem;
         border-radius: 0;
         box-shadow: none;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     .landing h1 {
@@ -673,6 +677,8 @@ footer a:hover {
         gap: 10px;
         padding: 0;
         margin: 1rem 0;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .nav_item a {
@@ -701,6 +707,28 @@ footer a:hover {
     .read-more-trigger {
         width: 100%;
         text-align: center;
+    }
+
+    form {
+        padding: 1rem;
+    }
+    
+    form p {
+        margin: 1rem 0;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 1rem;
+        padding: 0.75rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .errormsg {
+        font-size: 0.9rem;
+        margin-top: 0.4rem;
     }
 
     footer {
