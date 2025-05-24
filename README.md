@@ -1,13 +1,11 @@
-🌍 WanderMom Travel Blog
-Live Site: https://playpackrepeat.netlify.app
-GitHub Repo: github.com/dvelasquez124/wandermom-blog
+# WanderMom Travel Blog
 
-✨ About the Project
+## ✨ About the Project
 WanderMom is a vibrant, family-centered travel blog built to inspire and support parents who want to explore the world with their kids. It’s part personal blog, part frontend showcase — packed with custom styling, mobile responsiveness, and playful design touches.
 
 Whether you're planning your first family trip or you're a seasoned parent-traveler, WanderMom offers tips, toddler-friendly gear recommendations, multimedia memories, and more.
 
-🚀 Features
+## 🚀 Features
 📱 Fully responsive layout with mobile-first design
 
 🖌️ Custom CSS with pastel tones and animations
@@ -20,7 +18,7 @@ Whether you're planning your first family trip or you're a seasoned parent-trave
 
 🌸 Cute, accessible design choices inspired by real-life mom needs
 
-🧰 Tech Stack
+## 🧰 Tech Stack
 Frontend: HTML, CSS, JavaScript, Vue.js
 
 Design: Custom CSS with media queries, animations, and icon styling
@@ -29,13 +27,3 @@ Deployment: Netlify
 
 Version Control: Git + GitHub
 
-📸 Sample Pages
-Blog with post previews and expand toggles
-
-About Me with video + audio embed
-
-Contact form with validation
-
-Photo gallery with popup zoom
-
-Travel gear with show/hide feature
